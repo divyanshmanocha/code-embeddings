@@ -1,0 +1,287 @@
+
+    <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>neo4j display</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.css" type="text/css" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.js"> </script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/themes/prism.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/themes/prism-coy.min.css">
+
+      <style type="text/css">
+        #mynetwork {
+          width: 100%;
+          height: 500px;
+        }
+      </style>
+    </head>
+    <body data-gr-c-s-loaded="true">
+
+    <div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"><canvas width="1200" height="800" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"></canvas></div></div>
+
+    <script type="text/javascript">
+      // create an array with nodes
+      var nodes = new vis.DataSet(
+      [{'id': 77, 'label': 'find_frequent_itemsets', 'color': '#86BBD8'},
+ {'id': 37, 'label': 'set', 'color': '#86BBD8'},
+ {'id': 47, 'label': 'zip', 'color': '#86BBD8'},
+ {'id': 14, 'label': 'gen_mult_ser', 'color': '#33658A'},
+ {'id': 44, 'label': 'to_categorical', 'color': '#33658A'},
+ {'id': 122, 'label': 'ClassificationTree', 'color': '#33658A'},
+ {'id': 28, 'label': 'make_regression', 'color': '#86BBD8'},
+ {'id': 22, 'label': 'l1_regularization', 'color': '#33658A'},
+ {'id': 74, 'label': '_has_infrequent_itemsets', 'color': '#86BBD8'},
+ {'id': 24, 'label': 'list', 'color': '#86BBD8'},
+ {'id': 15, 'label': 'get_random_subsets', 'color': '#33658A'},
+ {'id': 20, 'label': 'k_fold_cross_validation_sets', 'color': '#33658A'},
+ {'id': 38, 'label': 'shuffle_data', 'color': '#33658A'},
+ {'id': 19, 'label': 'isinstance', 'color': '#86BBD8'},
+ {'id': 21, 'label': 'l1_l2_regularization', 'color': '#33658A'},
+ {'id': 5, 'label': 'calculate_entropy', 'color': '#33658A'},
+ {'id': 25, 'label': 'log2', 'color': '#86BBD8'},
+ {'id': 48, 'label': '_transform', 'color': '#86BBD8'},
+ {'id': 4, 'label': 'calculate_covariance_matrix', 'color': '#33658A'},
+ {'id': 13, 'label': 'float', 'color': '#86BBD8'},
+ {'id': 62, 'label': 'gen_num_seq', 'color': '#33658A'},
+ {'id': 134, 'label': 'LinearRegression', 'color': '#33658A'},
+ {'id': 145, 'label': 'Sigmoid', 'color': '#33658A'},
+ {'id': 99, 'label': 'Adam', 'color': '#33658A'},
+ {'id': 129, 'label': 'FPTreeNode', 'color': '#33658A'},
+ {'id': 130, 'label': 'Flatten', 'color': '#86BBD8'},
+ {'id': 9, 'label': 'combinations_with_replacement', 'color': '#86BBD8'},
+ {'id': 31, 'label': 'min', 'color': '#86BBD8'},
+ {'id': 146, 'label': 'Softmax', 'color': '#33658A'},
+ {'id': 43, 'label': 'sum', 'color': '#86BBD8'},
+ {'id': 85, 'label': '_get_neighbors', 'color': '#86BBD8'},
+ {'id': 11, 'label': 'euclidean_distance', 'color': '#33658A'},
+ {'id': 143, 'label': 'Reshape', 'color': '#86BBD8'},
+ {'id': 7, 'label': 'calculate_variance', 'color': '#33658A'},
+ {'id': 61, 'label': 'update', 'color': '#86BBD8'},
+ {'id': 16, 'label': 'grad_func', 'color': '#86BBD8'},
+ {'id': 84, 'label': 'reconstruct', 'color': '#86BBD8'},
+ {'id': 39, 'label': 'sigmoid', 'color': '#86BBD8'},
+ {'id': 60, 'label': '_calculate_cost', 'color': '#86BBD8'},
+ {'id': 75, 'label': '_generate_candidates', 'color': '#86BBD8'},
+ {'id': 30, 'label': 'mean_squared_error', 'color': '#33658A'},
+ {'id': 70, 'label': 'build_decoder', 'color': '#86BBD8'},
+ {'id': 101, 'label': 'BatchNormalization', 'color': '#86BBD8'},
+ {'id': 137, 'label': 'NeuralNetwork', 'color': '#33658A'},
+ {'id': 140, 'label': 'PolynomialRidgeRegression', 'color': '#33658A'},
+ {'id': 42, 'label': 'str', 'color': '#86BBD8'},
+ {'id': 57, 'label': '_calculate_scatter_matrices', 'color': '#86BBD8'},
+ {'id': 63, 'label': '_classify', 'color': '#86BBD8'},
+ {'id': 50, 'label': 'gradient', 'color': '#86BBD8'},
+ {'id': 138, 'label': 'NotImplementedError', 'color': '#86BBD8'},
+ {'id': 94, 'label': '_inherit_weights', 'color': '#86BBD8'},
+ {'id': 17, 'label': 'hasattr', 'color': '#86BBD8'},
+ {'id': 34, 'label': 'polynomial_features', 'color': '#33658A'},
+ {'id': 18, 'label': 'index_combinations', 'color': '#86BBD8'},
+ {'id': 8, 'label': 'cmap', 'color': '#86BBD8'},
+ {'id': 58, 'label': 'calculate_correlation_matrix', 'color': '#33658A'},
+ {'id': 6, 'label': 'calculate_std_dev', 'color': '#33658A'},
+ {'id': 64, 'label': 'build_generator', 'color': '#86BBD8'},
+ {'id': 123, 'label': 'Conv2D', 'color': '#86BBD8'},
+ {'id': 148, 'label': 'UpSampling2D', 'color': '#86BBD8'},
+ {'id': 83, 'label': '_calculate_information_gain', 'color': '#86BBD8'},
+ {'id': 127, 'label': 'Dropout', 'color': '#86BBD8'},
+ {'id': 12, 'label': 'fetch_mldata', 'color': '#86BBD8'},
+ {'id': 10, 'label': 'divide_on_feature', 'color': '#33658A'},
+ {'id': 40, 'label': 'split_func', 'color': '#86BBD8'},
+ {'id': 35, 'label': 'pow', 'color': '#86BBD8'},
+ {'id': 93, 'label': 'run', 'color': '#86BBD8'},
+ {'id': 29, 'label': 'max', 'color': '#86BBD8'},
+ {'id': 126, 'label': 'DecisionStump', 'color': '#33658A'},
+ {'id': 90, 'label': '_get_itemset_key', 'color': '#86BBD8'},
+ {'id': 81, 'label': 'predict_value', 'color': '#86BBD8'},
+ {'id': 136, 'label': 'MultilayerPerceptron', 'color': '#33658A'},
+ {'id': 131, 'label': 'GradientBoostingClassifier', 'color': '#33658A'},
+ {'id': 45, 'label': 'train_test_split', 'color': '#33658A'},
+ {'id': 32, 'label': 'model', 'color': '#86BBD8'},
+ {'id': 23, 'label': 'l2_regularization', 'color': '#33658A'},
+ {'id': 72, 'label': '_backward_pass', 'color': '#86BBD8'},
+ {'id': 36, 'label': 'reversed', 'color': '#86BBD8'},
+ {'id': 78, 'label': '_rules_from_itemset', 'color': '#86BBD8'},
+ {'id': 144, 'label': 'Rule', 'color': '#33658A'},
+ {'id': 26, 'label': 'loss', 'color': '#86BBD8'},
+ {'id': 98, 'label': 'Adaboost', 'color': '#33658A'},
+ {'id': 147, 'label': 'SquareLoss', 'color': '#33658A'},
+ {'id': 33, 'label': 'normalize', 'color': '#33658A'},
+ {'id': 59, 'label': '_closest_medoid', 'color': '#86BBD8'},
+ {'id': 68, 'label': '_init_random_gaussians', 'color': '#86BBD8'},
+ {'id': 124, 'label': 'CrossEntropy', 'color': '#33658A'},
+ {'id': 53, 'label': '_update_weights', 'color': '#86BBD8'},
+ {'id': 46, 'label': 'tuple', 'color': '#86BBD8'},
+ {'id': 135, 'label': 'LogisticLoss', 'color': '#33658A'},
+ {'id': 132, 'label': 'GradientBoostingRegressor', 'color': '#33658A'},
+ {'id': 92, 'label': '_mutate', 'color': '#86BBD8'},
+ {'id': 27, 'label': 'make_diagonal', 'color': '#33658A'},
+ {'id': 128, 'label': 'ElasticNet', 'color': '#33658A'},
+ {'id': 65, 'label': 'build_discriminator', 'color': '#86BBD8'},
+ {'id': 150, 'label': 'ZeroPadding2D', 'color': '#86BBD8'},
+ {'id': 139, 'label': 'Plot', 'color': '#33658A'},
+ {'id': 82, 'label': '_calculate_variance_reduction', 'color': '#86BBD8'},
+ {'id': 141, 'label': 'RNN', 'color': '#86BBD8'},
+ {'id': 2, 'label': 'activation_function', 'color': '#86BBD8'},
+ {'id': 91, 'label': '_calculate_fitness', 'color': '#86BBD8'},
+ {'id': 0, 'label': 'abs', 'color': '#86BBD8'},
+ {'id': 73, 'label': 'summary', 'color': '#86BBD8'},
+ {'id': 100, 'label': 'AsciiTable', 'color': '#86BBD8'},
+ {'id': 51, 'label': 'acc', 'color': '#86BBD8'},
+ {'id': 1, 'label': 'accuracy_score', 'color': '#33658A'},
+ {'id': 3, 'label': 'batch_iterator', 'color': '#33658A'},
+ {'id': 95, 'label': '_crossover', 'color': '#86BBD8'},
+ {'id': 55, 'label': 'predict', 'color': '#86BBD8'}]
+      );
+
+      // create an array with edges
+      var edges = new vis.DataSet(
+[{'from': 77, 'to': 37, 'width': 2},
+ {'from': 14, 'to': 44, 'width': 2},
+ {'from': 74, 'to': 24, 'width': 4},
+ {'from': 20, 'to': 38, 'width': 2},
+ {'from': 5, 'to': 25, 'width': 2},
+ {'from': 48, 'to': 4, 'width': 2},
+ {'from': 62, 'to': 44, 'width': 2},
+ {'from': 85, 'to': 11, 'width': 2},
+ {'from': 61, 'to': 16, 'width': 2},
+ {'from': 84, 'to': 39, 'width': 4},
+ {'from': 60, 'to': 11, 'width': 2},
+ {'from': 75, 'to': 19, 'width': 2},
+ {'from': 70, 'to': 101, 'width': 4},
+ {'from': 70, 'to': 137, 'width': 2},
+ {'from': 57, 'to': 4, 'width': 2},
+ {'from': 63, 'to': 47, 'width': 2},
+ {'from': 50, 'to': 138, 'width': 2},
+ {'from': 94, 'to': 17, 'width': 2},
+ {'from': 34, 'to': 9, 'width': 2},
+ {'from': 34, 'to': 18, 'width': 2},
+ {'from': 58, 'to': 6, 'width': 4},
+ {'from': 64, 'to': 123, 'width': 6},
+ {'from': 64, 'to': 148, 'width': 4},
+ {'from': 64, 'to': 101, 'width': 12},
+ {'from': 64, 'to': 143, 'width': 2},
+ {'from': 64, 'to': 137, 'width': 4},
+ {'from': 83, 'to': 5, 'width': 6},
+ {'from': 10, 'to': 40, 'width': 4},
+ {'from': 10, 'to': 19, 'width': 4},
+ {'from': 11, 'to': 35, 'width': 2},
+ {'from': 93, 'to': 43, 'width': 2},
+ {'from': 93, 'to': 29, 'width': 2},
+ {'from': 90, 'to': 42, 'width': 2},
+ {'from': 81, 'to': 19, 'width': 4},
+ {'from': 45, 'to': 38, 'width': 2},
+ {'from': 72, 'to': 36, 'width': 2},
+ {'from': 78, 'to': 144, 'width': 2},
+ {'from': 78, 'to': 13, 'width': 2},
+ {'from': 78, 'to': 24, 'width': 4},
+ {'from': 26, 'to': 138, 'width': 2},
+ {'from': 59, 'to': 11, 'width': 2},
+ {'from': 59, 'to': 13, 'width': 2},
+ {'from': 68, 'to': 4, 'width': 2},
+ {'from': 53, 'to': 17, 'width': 2},
+ {'from': 92, 'to': 17, 'width': 2},
+ {'from': 92, 'to': 24, 'width': 2},
+ {'from': 65, 'to': 130, 'width': 2},
+ {'from': 65, 'to': 101, 'width': 4},
+ {'from': 65, 'to': 150, 'width': 2},
+ {'from': 65, 'to': 127, 'width': 12},
+ {'from': 65, 'to': 123, 'width': 8},
+ {'from': 65, 'to': 137, 'width': 4},
+ {'from': 82, 'to': 43, 'width': 2},
+ {'from': 82, 'to': 7, 'width': 6},
+ {'from': 91, 'to': 0, 'width': 2},
+ {'from': 73, 'to': 42, 'width': 6},
+ {'from': 73, 'to': 100, 'width': 4},
+ {'from': 51, 'to': 1, 'width': 2},
+ {'from': 3, 'to': 31, 'width': 2},
+ {'from': 95, 'to': 17, 'width': 2},
+ {'from': 55, 'to': 11, 'width': 2},
+ {'from': 55, 'to': 34, 'width': 10},
+ {'from': 55, 'to': 33, 'width': 6}]
+      );
+
+      // create a network
+      var container = document.getElementById('mynetwork');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      var options = {
+        nodes: {
+          font: { color: 'white',size: 14 },
+          color: '#F9A6C1',
+          size: 25,
+          shape: 'circle',
+          widthConstraint: 60
+        },
+        edges : {
+          arrows: {
+               to: {enabled: true, scaleFactor: 0.5}
+           },
+          "color": {
+              "inherit": false
+          },
+          font: {size: 14, align: 'middle'},
+          "smooth": {
+              "enabled": true,
+              "type": "dynamic",
+          },
+          "length": 200
+        },
+        "interaction": {
+            "dragNodes": true,
+            "hideEdgesOnDrag": false,
+            "hideNodesOnDrag": false
+        },
+        "physics": {
+            "enabled": true,
+            "stabilization": {
+                "enabled": true,
+                "fit": true,
+
+            }
+        }
+        };
+      var network = new vis.Network(container, data, options);
+    </script>
+
+<!--
+    <img src="../imgs/search_examples/single_word.png">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.4/components/prism-python.min.js"></script>
+<pre>
+   <code class="language-python">
+# CODE_1
+def get_scatter_matrices(self, A, B):
+    """ within class scatter matrix """
+    n_features = np.shape(A)[1] 
+    labels = np.unique(B) 
+    scatter = np.empty((n_features, n_features))
+    for label in labels: 
+         _A = A[B == label]
+
+# CODE_2
+def generate_multiplication_series(numLst, num=15, cols=50):
+    """ multiplication series """
+    A = np.zeros([numLst, num, cols])
+    for j in range(numLst):
+        series = np.linspace(start, start*np.random.randint, 8), num=num, dtype=int)
+        A[j] = to_categorical(mult_ser, n_col=cols)
+
+# CODE_3
+def 3dPlot(A, B):
+    """ plot 3d data """
+    B = misc._transform(B, dim=3)
+    plt.scatter(B[:, 0], B[:, 1], B[:, 2], c=A)
+    plt.show()
+
+# CODE_4
+def gauss_kernel(x_1, x_2, gamma):
+    """ Gauss Kernel """
+    dist = np.linalg.norm(x_1 - x_2) ** 2
+   </code>
+</pre> --!>
+
+    </body></html>
+    
